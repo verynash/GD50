@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    RTS
+{% endblock %}
+
+{% block main %}
+
+<body>
+    <div class="main">
+        <h1>Ready to Sell</h1>
+        <div class="gallery">
+            <div class="gallery__item">
+                <p><a href="/order">"Nike Shadow" - Size X - $150</a></p>
+                <img src="/static/NikeShadow.jpg" />
+            </div>
+            <div class="gallery__item">
+                <p><a href="/order">Horror Heights" - Size X - $200</p></a>
+                <img src="/static/HorrorFaces.jpg" />
+            </div>
+            <div class="gallery__item">
+                <p><a href="/order">Playboy Drippy" - Size X - $150</p></a>
+                <img src="/static/PlayboyDrip.jpg" />
+            </div>
+            <div class="gallery__item">
+                <p><a href="/order">Vintage Blue Yellow" - Size X - $150</p></a>
+                <img src="/static/VintageBlueYellow.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

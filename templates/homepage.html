@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<!--stocks the user owns, the numbers of shares owned, the current price of each stock, and the total value of each holding (i.e., shares times price).
+ user’s current cash balance along with a grand total (i.e., stocks’ total valu plus cash)-->
+<body>
+    <h1>ZJ C <span style="color: black">Custom Kicks</span></h1>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-8">
+                <h1 class="mb-3"><a href="/kicks" class="homepagelink">Check the Showcase</a></h1>
+                <div class="gallery__item">
+                    <img class="mb-3" src="/static/AliTysonClose.jpg" width="100%">
+                </div>
+            </div>
+            <div class="col-4">
+                <h3 class="mb-3" style="font-family: 'Fira Sans', sans-serif; font-weight: bold">Follow me on social media!</h3>
+                <h5><button type="button" class="btn btn-primary mb-3"><a href="https://www.facebook.com/zjccustomkicks">Facebook</a></button></h5>
+                <div class="gallery__item">
+                    <img class="pixelrounded mb-3" src="/static/KicksLogo.jpg" width="100%">
+                </div>
+                <div class="gallery__item">
+                    <img class="pixelrounded" src="/static/Spongebob.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row">
+            <div class="col">
+                <div class="gallery__item">
+                    <img class="pixelrounded" src="/static/NikeShadow.jpg" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="gallery__item">
+                    <img class="pixelrounded" src="/static/HorrorFaces.jpg" width="100%">
+                </div>
+                <h1 class="m-3"><a class="homepagelink" href="/rts">Ready to Sell</a></h1>
+                <div class="gallery__item">
+                    <img class="pixelrounded" src="/static/VintageBlueYellow.jpg" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="gallery__item">
+                    <img class="pixelrounded" src="/static/PlayboyDrip.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

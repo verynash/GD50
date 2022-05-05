@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Order
+{% endblock %}
+
+{% block main %}
+<body>
+    <h1>Order</h1>
+
+    <h4>Thank you for your interest in my products. Please email me at email@domain.com for further details. Be sure to include your: name, the item you'd like to purchase, the size, and any other details you feel are important.</h4>
+    <h4>Feel free to ask any questions you may have.</h4>
+
+    <h5 class="tableheader">*Below is a list of starting prices. Prices may increase based on the scope of the work.*</h4>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Size</th>
+                <th>ZJC Logo</th>
+                <th>Custom Printed</th>
+                <th>Hand-Painted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for inventory in inventory %}
+                <tr>
+                    <td>{{inventory["item"]}}</td>
+                    <td>{{inventory["size"]}}</td>
+                    <td>{{inventory["logo"]}}</td>
+                    <td>{{inventory["printed"]}}</td>
+                    <td>{{inventory["handpainted"]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}

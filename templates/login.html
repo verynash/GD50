@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <img class="p-3 pixelrounded" alt="Zoe J Coar" src="/static/KicksLogo.jpg" width="250rem">
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+
+    <a class="nav-link" href="/register">No account? Click here to register!</a>
+
+{% endblock %}
